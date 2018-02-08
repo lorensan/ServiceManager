@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27019.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceManager", "ServiceManager\ServiceManager.csproj", "{CF1B5245-EC0E-4935-B043-3BC03F2F55BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceManager_WPF", "ServiceManager_WPF\ServiceManager_WPF.csproj", "{5105F3A3-BADA-4B01-ABDA-61B86F026AFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF1B5245-EC0E-4935-B043-3BC03F2F55BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1B5245-EC0E-4935-B043-3BC03F2F55BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1B5245-EC0E-4935-B043-3BC03F2F55BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1B5245-EC0E-4935-B043-3BC03F2F55BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5105F3A3-BADA-4B01-ABDA-61B86F026AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5105F3A3-BADA-4B01-ABDA-61B86F026AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5105F3A3-BADA-4B01-ABDA-61B86F026AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5105F3A3-BADA-4B01-ABDA-61B86F026AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {116FE065-FC02-4D02-9CD1-2D582725EF9A}
+	EndGlobalSection
+EndGlobal

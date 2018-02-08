@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="ServiceManager_WPF.Views.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ServiceManager_WPF.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="520" d:DesignWidth="773">
+    <Grid>
+        <ListBox HorizontalAlignment="Left" Margin="0,369,0,0" Width="763"/>
+        <DataGrid HorizontalAlignment="Left" Height="174" Margin="0,172,0,0" VerticalAlignment="Top" Width="763"/>
+        <Label Content="Service to Search" HorizontalAlignment="Left" Margin="10,16,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="16,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290"/>
+        <GroupBox Header="Services Control" HorizontalAlignment="Left" Height="141" Margin="584,10,0,0" VerticalAlignment="Top" Width="179">
+            <Grid>
+                <Label Content="Location (IP)" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
+                <TextBox Name="tx1" HorizontalAlignment="Left" Height="23" Margin="0,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157"/>
+                <Label Content="User" HorizontalAlignment="Left" Margin="0,64,0,0" VerticalAlignment="Top"/>
+                <Label Content="Pass" HorizontalAlignment="Left" Margin="76,64,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="76,95,-29,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="59" Margin="16,108,0,0" VerticalAlignment="Top" Width="535">
+            <Grid>
+                <RadioButton Name="rbStopped" Content="Stopped" HorizontalAlignment="Left" Height="18" Margin="35,10,0,0" VerticalAlignment="Top"/>
+                <RadioButton Name="rbRunning" Content="Running" HorizontalAlignment="Left" Height="18" Margin="212,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.557,0.537"/>
+                <RadioButton Name="rbAll" Content="All" HorizontalAlignment="Left" Height="18" Margin="410,9,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</UserControl>
