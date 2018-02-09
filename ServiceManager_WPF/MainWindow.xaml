@@ -7,7 +7,7 @@
         xmlns:Views="clr-namespace:ServiceManager_WPF.Views" x:Class="ServiceManager_WPF.MainWindow"
         mc:Ignorable="d"
         Title="ServiceManager" Height="520" Width="773" Icon="Images/servicemanager_H9L_2.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Cursor="Arrow" Background="White">
-    <Grid>
-        <Views:MainPage HorizontalAlignment="Left" Height="520" Margin="0,0,0,0" VerticalAlignment="Top" Width="773"/>
+    <Grid Name="MainGrid"> 
+        
     </Grid>
 </Window>

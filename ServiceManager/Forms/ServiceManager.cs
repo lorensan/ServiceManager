@@ -186,7 +186,6 @@ namespace ServiceManager.Forms
         /// <param name="e"></param>
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
-            
             if (!String.IsNullOrEmpty(textBox1.Text.ToString()))
             {
                 FilterByString(textBox1.Text);

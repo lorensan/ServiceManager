@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceManager_WPF.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,32 @@ namespace ServiceManager_WPF.Views
         public MainPage()
         {
             InitializeComponent();
+            textBox1.Focus();
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (!String.IsNullOrEmpty(textBox1.Text.ToString()))
+            {
+                FilterByString(textBox1.Text);
+            }
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            serviceGrid.ItemsSource= ServiceControllerClass.ListServices();
+        }
+
+        private void rbStopped_Click(object sender, RoutedEventArgs e)
+        {
+            logBox.Items.Add("FILTER: Stopped services selected.");
+            serviceGrid.ItemsSource = ServiceControllerClass.ListStoppedServices();
+        }
+
+        private void rbRunning_Click(object sender, RoutedEventArgs e)
+        {
+            logBox.Items.Add("FILTER: Running services selected.");
+            serviceGrid.ItemsSource = ServiceControllerClass.ListRunningServices();
         }
     }
 }

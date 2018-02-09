@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceManager_WPF.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,7 +23,10 @@ namespace ServiceManager_WPF
     {
         public MainWindow()
         {
+            MainPage pagina = new MainPage();
             InitializeComponent();
+            this.MainGrid.Children.Add(pagina);
+            
         }
     }
 }
